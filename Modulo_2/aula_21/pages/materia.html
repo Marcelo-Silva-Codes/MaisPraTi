@@ -4,19 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batman lanca batpapo</title>
-    <link rel="stylesheet" href="materia.css">
+    <link rel="stylesheet" href="../css/main.css ">
+            <script src="../js/components/site-header.js"> </script>
+    <script src="../js/components/news-card.js"> </script>
+    <script src="../js/components/site-footer.js"> </script>
 </head>
 <body>
-    <header class="cabecalho">
-        <a href="index.html" class="logo"> Clarim Diário</a>
-        <nav class="navegacao">
-            <a href="#">Politica</a>
-            <a href="#">Economia</a>
-            <a href="#">Esportes</a>
-            <a href="#">Homem-Aranha</a>
-            <!-- a[href"#"]*4 -->
-        </nav>
-    </header>
+    <site-header></site-header>
 
     <nav class="trilha">
         <a href="index.html">Inicio</a>
@@ -93,42 +87,18 @@
     <section class="relacionados">
         <h2>Leia também</h2>
         <div class="grade">
-            <article class="cartao">
-                <span class="categoria"> Economia</span>
-                <h3>Dólar recua e a bolsa fecha em alta</h3>
-            </article>
-
-            <article class="cartao">
-                <span class="categoria"> Cuktlura</span>
-                <h3>Churrasco do RS é eleito o melhor do país</h3>
-            </article>
-
-            <article class="cartao">
-                <span class="categoria">Esportes</span>
-                <h3>Brasil é Hexacampeão</h3>
-            </article>
+           <news-card categoria="Economia" titulo="Dólar recua e a bolsa sobre." 
+            resumo=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore earum aut aliquam quis. Perspiciatis magni neque hic mollitia et quos officia aliquid omnis quam quibusdam nesciunt cumque numquam, laboriosam necessitatibus."
+            />
+            <news-card categoria="Economia" titulo="Dólar recua e a bolsa sobre." 
+            resumo=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore earum aut aliquam quis. Perspiciatis magni neque hic mollitia et quos officia aliquid omnis quam quibusdam nesciunt cumque numquam, laboriosam necessitatibus."
+            />
+            <news-card categoria="Economia" titulo="Dólar recua e a bolsa sobre." 
+            resumo=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore earum aut aliquam quis. Perspiciatis magni neque hic mollitia et quos officia aliquid omnis quam quibusdam nesciunt cumque numquam, laboriosam necessitatibus."
+            />
         </div>
     </section>
     
-    <footer class="rodape">
-        <div class="coluna">
-            <h4><strong>Clarim Diario</strong></h4>
-            <p>Alta Credibilidade, Dirigido por J. Jonah Jameson.</p>
-        </div>
-        <div class="colunas">
-            <h4>Editoriais</h4>
-            <a href="#">Politica</a>
-            <a href="#">Cultura</a>
-            <a href="#">Esportes</a>
-            <a href="#">Homem-Aranha</a>
-        </div>
-        <div class="colunas">
-            <h4>Institucional</h4>
-            <a href="#">Termos de Uso</a>
-            <a href="#">Privacidade</a>
-            <a href="#">Quem Somos</a>
-            <a href="#">Contato</a>
-        </div>
-    </footer>
+    <site-footer></site-footer>
 </body>
 </html>
