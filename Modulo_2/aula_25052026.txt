@@ -3,3 +3,5 @@ pwd mostra o caminho
 git init .
 
 git config --global --unset user.name ou user.email // vai limpar o que a gente fez
+
+///asdasdadsadsdssdad
