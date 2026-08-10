@@ -1,0 +1,37 @@
+.cartao {
+    background-color: var(--cor-card);
+    padding: 18px;
+    border-radius: var(--raio);
+}
+
+.cartao h3 {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.cartao__titulo{
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.cartao__resumo{
+    font-size: 15px;
+    color: var(--cor-suave);
+}
+
+.cartao p{
+    font-size: 15px;
+    color: #555;
+}
+
+.card__destaque {
+    padding: 28px;
+}
+
+.card__destaque .cartao__titulo {
+    font-size: 30px;
+}
+
+.card__destaque .cartao__resumo {
+    font-size: 17px;
+}
