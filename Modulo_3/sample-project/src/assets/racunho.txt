@@ -1,0 +1,49 @@
+/* eslint-disable no-unused-vars */
+
+import { useState } from "react";
+
+// eslint-disable-next-line react-hooks/rules-of-hooks
+
+
+export default function App() {
+  
+  const [tarefas, setTarefas] = useState([
+  { id: 1, texto: "Aprender sobre Props", concluida: true },
+  { id: 2, texto: "Entender useState", concluida: false },
+  { id: 3, texto: "Estudar web Components", concluida: false },
+]);
+
+  return (
+    <div>
+      <uL>
+        {tarefas.map((tarefa) => (
+          <li key={tarefa.id}> {tarefa.texto}, {tarefa.concluida}
+          </li>
+        ))}
+      </uL>
+    </div>
+  );
+}
+
+//outra function para outra coisa
+
+// function Saudacao({ nome }) {
+//   return <h2>olá {nome} seja bem-vindo!</h2>;
+// }
+
+// const [contador, setContador] = useState(10);
+
+// {
+  /* <Saudacao nome="marcelo" />
+    <p>
+      {contador}
+    </p>
+
+    <button onClick={() => setContador(contador + 1)}>
+      Soma +1
+    </button>
+
+    <button onClick={() => setContador(contador -1)}>
+      Diminui -1
+    </button> */
+// }
