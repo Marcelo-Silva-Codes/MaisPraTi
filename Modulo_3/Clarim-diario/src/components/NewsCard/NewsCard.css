@@ -1,5 +1,5 @@
 .card{
-    background-color: #fff;
+    background-color: var(--papel);
     border: 1px solid var(--tinta);
     padding: 18px;
 }
@@ -17,6 +17,11 @@
     font-size: 19px;
     line-height: 1.5;
     margin: 8px 0 6px;
+}
+
+.card__titulo a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .card__resumo{
