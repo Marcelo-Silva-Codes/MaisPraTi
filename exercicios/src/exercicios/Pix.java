@@ -1,3 +1,5 @@
+package exercicios;
+
 public class Pix implements FormaPagamento{
     @Override
     public double calcularTaxa(double valor) {
@@ -6,6 +8,6 @@ public class Pix implements FormaPagamento{
 
     @Override
     public void processar(double valor) {
-        System.out.println("Processando pagamento via Pix no valor de R$ " + valor);
+        System.out.println("Processando pagamento via exercicios.Pix no valor de R$ " + valor);
     }
 }

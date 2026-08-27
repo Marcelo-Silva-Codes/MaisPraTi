@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+public class NotificadorEmail implements Notificador{
 
-public class NotificadorEmail {
+    public void enviar(String destinatário, String mensagem) {
+        System.out.println("[E-mail] para: " + destinatário);
+        System.out.println("         " + mensagem);
+    }
 }

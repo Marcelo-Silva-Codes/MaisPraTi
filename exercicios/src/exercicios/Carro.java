@@ -1,5 +1,7 @@
+package exercicios;
+
 public class Carro extends MeioTransporte{
     public Carro(){
-        super("Carro", 60.0);
+        super("exercicios.Carro", 60.0);
     }
 }

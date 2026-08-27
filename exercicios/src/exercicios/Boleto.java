@@ -1,3 +1,5 @@
+package exercicios;
+
 public class Boleto implements FormaPagamento{
     @Override
     public double calcularTaxa(double valor) {
@@ -6,6 +8,6 @@ public class Boleto implements FormaPagamento{
 
     @Override
     public void processar(double valor) {
-        System.out.println("Processando pagamento via Boleto no valor de R$ " + valor);
+        System.out.println("Processando pagamento via exercicios.Boleto no valor de R$ " + valor);
     }
 }

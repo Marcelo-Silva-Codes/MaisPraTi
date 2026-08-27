@@ -1,3 +1,5 @@
+package exercicios;
+
 public class CofrinhoDigital {
     private double saldo = 0;
 

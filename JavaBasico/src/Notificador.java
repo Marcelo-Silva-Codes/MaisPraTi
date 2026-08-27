@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
 public interface Notificador {
+    void enviar(String destinatário, String mensagem);
 }

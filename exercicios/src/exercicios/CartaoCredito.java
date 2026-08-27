@@ -1,3 +1,5 @@
+package exercicios;
+
 public class CartaoCredito implements FormaPagamento{
     @Override
     public double calcularTaxa(double valor) {

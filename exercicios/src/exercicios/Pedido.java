@@ -1,3 +1,5 @@
+package exercicios;
+
 public class Pedido {
     private double valor;
     private FormaPagamento formaPagamento;

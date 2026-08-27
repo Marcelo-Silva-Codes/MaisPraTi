@@ -1,3 +1,5 @@
+package exercicios;
+
 public abstract class MeioTransporte {
         private String nome;
         private double velocidadeMedia;

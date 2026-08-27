@@ -1,5 +1,7 @@
+package exercicios;
+
 public class Bicicleta extends MeioTransporte{
     public Bicicleta(){
-        super("Bicicleta", 20.0);
+        super("exercicios.Bicicleta", 20.0);
     }
 }
