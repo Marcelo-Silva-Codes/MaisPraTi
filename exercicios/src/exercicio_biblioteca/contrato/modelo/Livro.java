@@ -39,4 +39,51 @@ public class Livro extends ItemEmprestavel implements Reservavel {
         return renovacoesUtilizadas <  MAXIMO_RENOVACOES;
     }
 
+    @Override
+    public void reservar(Usuario usuario){
+        if(usuario == null){
+            throw  new IllegalArgumentException("Usuário inválido!");
+        }
+        if(isDisponivel()){
+            this.nomeReservante = usuario.getNome();
+        }
+    }
+
+    @Override
+    public boolean temReserva(){
+        return nomeReservante != null;
+    }
+
+    @Override
+    public String getReservante(){
+        return nomeReservante == null ? "-" : this.nomeReservante;
+    }
+
+    @Override
+    public String getCategoria(){
+        return "Livro";
+    }
+
+    @Override
+    public String getDescricao(){
+        return "Autor: " + this.autor + "| ISBN: " + this.isbn;
+    }
+
+    public boolean renovar(){
+        if(!permiteRenovacao()){
+            return false;
+        }
+
+        renovacoesUtilizadas++;
+        return true;
+    }
+
+    public  String getAutor(){
+        return this.autor;
+    }
+
+    public int getRenovacoesUtilizadas(){
+        return this.renovacoesUtilizadas;
+    }
+
 }
