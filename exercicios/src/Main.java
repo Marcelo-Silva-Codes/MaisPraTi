@@ -8,6 +8,8 @@ public class Main {
             new Funcionario("Viga",1000, "213212323"),
         };
 
+//OverLoad -> mesmo metodo com o mesmo  nome
+        // OverRide -> mesmo metodo com nome diferente ou algo a sim
 
         double folha = 0;
 

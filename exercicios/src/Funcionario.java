@@ -1,4 +1,4 @@
-public class Funcionario {
+public abstract class Funcionario {
     protected String nome;
     protected double salario;
     protected String cpf;
@@ -9,9 +9,7 @@ public class Funcionario {
         this.cpf = cpf;
     }
 
-    public  double calcularSalario(){
-        return this.salario;
-    }
+    public abstract double calcularSalario();
 
     @Override
     public String toString() {
