@@ -1,4 +1,4 @@
-package biblioteca.modelo;
+package exercicio_biblioteca.contrato.modelo;
 
 /*
  * ============================================================

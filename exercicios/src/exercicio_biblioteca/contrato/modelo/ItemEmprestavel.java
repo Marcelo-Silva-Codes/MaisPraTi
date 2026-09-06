@@ -7,20 +7,20 @@ public abstract class ItemEmprestavel extends ItemAcervo implements Emprestavel 
 
     protected ItemEmprestavel(String codigo, String titulo, int ano) {
         super(codigo, titulo, ano);
-        this.usuarioAtual = null;
+      //  this.usuarioAtual = null;
     }
 
-    @Override
-    public boolean emprestar(Usuario usuario){
-        if(usuario == null){
-            throw new IllegalArgumentException("Usuario não poder ser nulo.");
-        }
-
-        if(!isDisponivel()){
-            System.out.println("Item indisponivel!");
-        }
-        marcarComoEmprestado();
-        return true;
-    }
+//    @Override
+//    public boolean emprestar(Usuario usuario){
+//        if(usuario == null){
+//            throw new IllegalArgumentException("Usuario não poder ser nulo.");
+//        }
+//
+//        if(!isDisponivel()){
+//            System.out.println("Item indisponivel!");
+//        }
+//        marcarComoEmprestado();
+//        return true;
+//    }
 
 }

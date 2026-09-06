@@ -3,7 +3,7 @@ package exercicio_biblioteca.contrato.contrato;
 public interface Emprestavel {
     int getPrazoEmprestimoDias();
     double getMultaPorDia();
-    boolean emprestar(Usuario usuario);
+   // boolean emprestar(Usuario usuario);
     boolean devolver();
 
     default boolean permiteRenovacao(){
