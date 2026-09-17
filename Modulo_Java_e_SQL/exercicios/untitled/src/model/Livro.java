@@ -1,0 +1,14 @@
+package model;
+
+public class Livro extends ItemBiblioteca {
+    public Livro(String codigo, String titulo) { super(codigo, titulo); }
+
+    @Override
+    public int getPrazo() { return 14; }
+
+    @Override
+    public double calcularMulta(int diasAtraso) {
+        return diasAtraso > 0 ? diasAtraso * 0.50 : 0.0;
+    }
+}
+
